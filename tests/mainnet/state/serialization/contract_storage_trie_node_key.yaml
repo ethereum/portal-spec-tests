@@ -4,7 +4,6 @@
 # https://github.com/ethereum/portal-network-specs/blob/638aca50c913a749d0d762264d9a4ac72f1a9966/state-network-test-vectors.md
 
 address: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-address_hash: '0x8679e8eda65bd257638cf8cf09b8238888947cc3c0bea2aa2cc3f1c4ac7a3002'
 path:
   - 4
   - 0
