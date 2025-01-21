@@ -19,3 +19,7 @@ Cargo.lock
 .git
 .env
 venv
+
+# Added by cargo
+
+/target
