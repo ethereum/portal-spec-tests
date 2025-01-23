@@ -1,0 +1,38 @@
+name: Update Test Fixtures
+
+on:
+  schedule:
+    # Runs on the first day of every month at 00:00 UTC
+    - cron: '0 0 1 * *'
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  update-fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache dependencies
+        uses: Swatinem/rust-cache@v2
+
+      - name: Build and run update script
+        run: cargo run --release
+        env:
+          PANDAOPS_CLIENT_ID: ${{ secrets.PANDAOPS_CLIENT_ID }}
+          PANDAOPS_CLIENT_SECRET: ${{ secrets.PANDAOPS_CLIENT_SECRET }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'chore: update test fixtures for month'
+          title: 'Update test fixtures [automated]'
+          body: |
+            This PR updates the test fixtures with the latest data.
+            
+            Generated automatically by GitHub Actions.
+          branch: update-fixtures
+          base: master
