@@ -1,6 +1,6 @@
 execution_block_header:
   "0x99094199cba1cc1dee3355236b49ca465d9efdba92de73c7f626860587b83209"
-beacon_block_proof:
+execution_block_proof:
   - "0xfa7d4127a0debe26d12854c1f414a5d69aee267e43601604d187b5c8af5e65f5"
   - "0xbb69b5badad1c65397ce0a8e661b1f6ef5068a22a816d621278a1f53241724f0"
   - "0x8577b75a71b0f87716d425c8354a5d0eccacdcd805995cc71785f67f0181866b"
@@ -14,7 +14,7 @@ beacon_block_proof:
   - "0x02a54d4e05d0ea8722e23349045506b1e4b35ba73902df9212c3e6855b79725d"
 beacon_block_root:
   "0xfeda91e1f5deb3600789ddc1e6c194a50b49667202f809bae68a67ac573e9627"
-historical_summaries_proof:
+beacon_block_proof:
   - "0x593c90fe5e85cdf0ab5563e8df0c5b5dc1b257f9dbd9977775701a09ed4af96c"
   - "0xa1423179eabbcb254bcd2189c6f477651ac96b335a29273e93ebb9550c7b9fe5"
   - "0xf5a188e3014a2f92b2a82794cf22b2abcfecf9f2ac459ce2dc50f7d76d644c7f"
