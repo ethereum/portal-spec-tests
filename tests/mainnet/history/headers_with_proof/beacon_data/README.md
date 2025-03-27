@@ -7,4 +7,4 @@
   - `historical_batch.ssz` -> ssz encoded historical batch
 - pre-deneb blocks:
   - `block.ssz` -> ssz encoded beacon block
-  - `block_roots.ssz` -> ssz encoded beacon state block roots
+  - `beacon_state.ssz` -> ssz encoded beacon state
