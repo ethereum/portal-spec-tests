@@ -5,6 +5,6 @@
 - pre-capella blocks:
   - `block.ssz` -> ssz encoded beacon block
   - `historical_batch.ssz` -> ssz encoded historical batch
-- pre-deneb blocks:
+- capella and onwards blocks:
   - `block.ssz` -> ssz encoded beacon block
-  - `beacon_state.ssz` -> ssz encoded beacon state
+  - `block_roots.ssz` -> ssz encoded beacon state `block_roots` field
